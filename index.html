@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Bulbul Saini</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="particle-canvas"></canvas>
+<nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/profile.jpg" class="brand-avatar" alt="Bulbul Saini">
+        Bulbul <span>Saini</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="education.html">Education</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-hi">Hi There! </div>
+          <div class="hero-name">I'M <span class="purple">BULBUL SAINI</span></div>
+          <div class="hero-type" id="typeTarget"></div>
+          <p class="hero-summary">
+            B.Tech Computer Science Engineering graduate with hands-on experience in software development
+            and web technologies. Proficient in Java, JavaScript, React.js, Node.js, MySQL, HTML, and CSS,
+            with strong problem-solving and programming skills. Currently gaining industry experience as an
+            Intern at DEE Piping Systems.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact.html">Get In Touch</a>
+            <a class="btn btn-ghost" href="resume.html">View Resume</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo"><img src="assets/img/profile.jpg" alt="Bulbul Saini"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+    <div class="footer-inner">
+      <div class="footer-text">Designed &amp; built by Bulbul Saini &middot; &copy; 2026</div>
+      <div class="footer-social">
+        <a href="https://github.com/bulbulsaini" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/bulbul-saini-715309261/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="mailto:since2008bulbul@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+  </footer>
+<script src="site.js"></script>
+<script>
+  initTypewriter('typeTarget', ['Full Stack Developer', 'Java Developer', 'React.js Developer', 'Problem Solver'], { typeSpeed: 65, deleteSpeed: 35, pause: 1300 });
+</script>
+</body>
+</html>
