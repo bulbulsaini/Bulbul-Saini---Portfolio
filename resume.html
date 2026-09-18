@@ -128,16 +128,27 @@
   }
   .resume-toolbar .dl-group {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     flex-wrap: wrap;
+  }
+  .resume-toolbar .resume-pair {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .resume-toolbar .pair-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b6b91;
+    margin-right: 4px;
   }
   .resume-toolbar .dl-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 9px 16px;
+    padding: 8px 14px;
     border-radius: 8px;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 600;
     text-decoration: none;
     border: 1.5px solid #b361ff;
@@ -170,8 +181,16 @@
   <div class="resume-toolbar">
     <a class="back-link" href="index.html">&larr; Back to Portfolio</a>
     <div class="dl-group">
-      <a class="dl-btn primary" href="assets/docs/resume_%24.pdf" download>Download SDE Resume</a>
-      <a class="dl-btn" href="assets/docs/resume_%40.pdf" download>Download Full-Stack Resume</a>
+      <div class="resume-pair">
+        <span class="pair-label">SDE:</span>
+        <a class="dl-btn" href="assets/docs/resume_%24.pdf" target="_blank" rel="noopener">View</a>
+        <a class="dl-btn primary" href="assets/docs/resume_%24.pdf" download>Download</a>
+      </div>
+      <div class="resume-pair">
+        <span class="pair-label">Full-Stack:</span>
+        <a class="dl-btn" href="assets/docs/resume_%40.pdf" target="_blank" rel="noopener">View</a>
+        <a class="dl-btn primary" href="assets/docs/resume_%40.pdf" download>Download</a>
+      </div>
     </div>
   </div>
 
